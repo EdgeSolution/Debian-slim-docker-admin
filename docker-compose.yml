@@ -1,7 +1,7 @@
 version: '3'
 services:
      androidlink:
-        image: edgesolution/androiddm-javaenv-slim-admin:v1.0.0
+        image: edgesolution/androiddm-javaenv-slim-admin:v1.0.1
         restart: always
         depends_on:
                 - mqtt
@@ -41,7 +41,7 @@ services:
         networks: 
               - advnet
      astore:
-        image: edgesolution/androiddm-astore-slim-admin:v1.0.0
+        image: edgesolution/androiddm-astore-slim-admin:v1.0.1
         restart: always
         depends_on:
                 - db
@@ -58,7 +58,7 @@ services:
         environment: 
                 - TZ=Asia/Shanghai
      novnc:
-        image: edgesolution/androiddm-novnc-admin:v1.0
+        image: edgesolution/androiddm-novnc-admin:v1.1
         restart: always
         volumes:
                 - ./java-env/vnctoken/:/root/adv/vnctoken/
