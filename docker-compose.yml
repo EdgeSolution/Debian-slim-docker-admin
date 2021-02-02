@@ -58,7 +58,7 @@ services:
         environment: 
                 - TZ=Asia/Shanghai
      novnc:
-        image: edgesolution/apphub-novnc:v1.0
+        image: edgesolution/androiddm-novnc-admin:v1.2
         restart: always
         volumes:
                 - ./noVnc/log/:/root/adv/log
