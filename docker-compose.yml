@@ -1,7 +1,7 @@
 version: '3'
 services:
      androidlink:
-        image: edgesolution/androiddm-javaenv-slim-admin:v1.0.1
+        image: edgesolution/androiddm-javaenv-slim-admin:v1.0.2
         restart: always
         depends_on:
                 - mqtt
@@ -41,7 +41,7 @@ services:
         networks: 
               - advnet
      astore:
-        image: edgesolution/androiddm-astore-slim-admin:v1.0.1
+        image: edgesolution/androiddm-astore-slim-admin:v1.0.2
         restart: always
         depends_on:
                 - db
@@ -58,7 +58,7 @@ services:
         environment: 
                 - TZ=Asia/Shanghai
      novnc:
-        image: edgesolution/androiddm-novnc-admin:v1.2
+        image: edgesolution/androiddm-novnc-admin:v1.4
         restart: always
         volumes:
                 - ./noVnc/log/:/root/adv/log
