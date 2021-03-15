@@ -5,7 +5,6 @@ Download DebianSlim project
 Run the Debian slim docker image for AndroidManager
 
 
-# v1.0.1 version
  - New features
  - docker images version
   - androiddm/androiddm-javaenv-slim-dev:v2.4.0 
